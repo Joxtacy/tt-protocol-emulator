@@ -1,0 +1,13 @@
+[project]
+name = "tt-protocol-emulator"
+version = "0.1.0"
+description = "Testbench environment for the Tiny Tapeout protocol emulator"
+# cocotb 2.0.1 does not build on Python 3.14
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "cocotb==2.0.1",
+    "pytest==8.4.2",
+]
+
+[tool.uv]
+package = false
